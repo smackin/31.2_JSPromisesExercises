@@ -52,7 +52,7 @@ num_base_url = 'http://numbersapi.com/';
     })
 
     Promise.all(
-    Array.from({ length: 4}, () => {
+    Array.from({length: 4}, () => {
         return $.getJSON(`${num_base_url}${faveNums}/json`);
     })
     ) .then((response) => {
