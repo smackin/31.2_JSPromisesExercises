@@ -1,0 +1,17 @@
+JS Promises Notes 
+Goals
+Async functions are built on top of promises. 
+Review callback pattern for Async code. 
+define a promise
+Use promise to manage async code. 
+
+A Promise is one time guarantee for a future value. 
+A Promise a JS Object
+
+
+When you make an axios request, axios is a promised based ajax library which will make a request when you call 
+    axios.get(url); 
+
+Axios is a promise based library. 
+
+
