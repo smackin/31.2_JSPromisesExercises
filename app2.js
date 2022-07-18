@@ -66,9 +66,9 @@ async function part1() {
 }
 part1();
 
-    const favNumbers = [7, 11, 22];
+const favNumbers = [7, 11, 22];
 async function part2() {
-let data = await $.getJSON(`${baseURL}/${favNumbers}?json`);
+let data = await $.getJSON(`${baseURL}/${faveNums}?json`);
 console.log(data);
 }
 part2();
@@ -76,7 +76,7 @@ part2();
 // 3.
 async function part3() {
 let facts = await Promise.all(
-    Array.from({ length: 4 }, () => $.getJSON(`${baseURL}/${favNumber}?json`))
+    Array.from({ length: 4 }, () => $.getJSON(`${baseURL}/${faveNums}?json`))
 );
 facts.forEach(data => {
     $('body').append(`<p>${data.text}</p>`);
